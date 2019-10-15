@@ -50,6 +50,10 @@ git clone https://github.com/dragonskynaut/demo1.git
 git config --global user.name dragonskynaut
 git config --global user.email dragonskynaut@gmail.com
 
+git logout
+git config --global user.name "dummy"
+git config --global user.email "dummy"
+
 VCS=>version contral setup
 
 dagger2 (google)
