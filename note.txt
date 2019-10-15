@@ -215,3 +215,4 @@ private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(HelloAsync
 # c3js graphic-----------------
 
 # swagger2 (gen ui api document,ARC advance rest client)--------------------------
+8080/swagger-ui.html
