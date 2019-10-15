@@ -35,4 +35,14 @@ public class EmployeeRestController {
         employeeService.deleteEmployee(employeeId);
         LOGGER.info("employee:{} deleted suceussfully", employeeId);
     }
+
+    @PutMapping("/api/employees/{employeeId}")
+    public void updateEmployee(@RequestBody Employee employee,
+            @PathVariable(name="employeeId") Long employeeId){
+        Employee emp = employeeService.getEmployee(employeeId);
+        if(emp != null){
+            employeeService.updateEmployee(employee);
+            LOGGER.info("employee:{} deleted suceussfully", employeeId);
+        }
+    }
 }
